@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code || Kaushal Dhrangad</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="generator.css">
+    <link rel="stylesheet" href="scanner.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- nav -->
+
+        <nav>
+            <button class="nav-gene active">Generator</button>
+            <button class="nav-scan">Scanner</button>
+
+        </nav>
+
+        <!-- generator -->
+        <div class="generator">
+            <h1>QR Code Generator</h1>
+            <p>Paste a URL or Enter a text to create a QR code</p>
+
+            <div class="generator-form">
+                <input type="text" placeholder="Enter a text or URL">
+                <button>Generate QR Code</button>
+            </div>
+
+            <div class="generator-img">
+                <img src="./images/qr-code.png" alt="qr-code">
+            </div>
+
+            <div class="generator-btn ">
+                <button class="btn-link">Download <i class="fa-solid fa-download"></i></button>
+            </div>
+
+        </div>
+
+        <!-- scanner -->
+        <div class="scanner" style="display: none;">
+            <h1>
+                QR Code Scanner or Reader<i class="fa-solid fa-camera"></i><i class="fa-solid fa-circle-stop"></i>
+            </h1>
+
+            <form class="scanner-form">
+                <input type="file" accept="image/*" hidden>
+                <img src="images/qr-code.png" alt="">
+
+                <div class="content">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <p>Uplaod QR Code to scan</p>
+                </div>
+            </form>
+
+            <div class="scanner-details">
+                <textarea disabled>https://youtu.be/auj53gNL0Cs</textarea>
+                <div class="btn">
+                    <button class="close">Close</button>
+                    <button class="copy">Copy</button>
+                </div>
+            </div>
+
+
+        </div>
+        <footer>
+            <h4>Created by Kaushal Dhrangad</h4>
+            <div class="icon2">
+                <a href="https://github.com/kaushaldhrangad" target="_blank">
+                    <p><i class="fa-brands fa-github fa-2xl"></i> &nbsp;GitHub</p>
+                </a>
+                <a href="https://www.linkedin.com/in/kaushaldhrangad/" target="_blank">
+                    <p><i class="fa-brands fa-linkedin fa-2xl"></i>&nbsp; linkedin</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+    <script src="generator.js"></script>
+</body>
+
+</html>
